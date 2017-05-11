@@ -74,6 +74,34 @@ a{
     padding: 5px;
     text-decoration: none;
 }
+  
+  @media (min-width: 50em) {
+
+/* --- hide still image and show video for wider screens --- */
+
+body {
+  background: #000 none;
+  }
+
+#video-background {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%); /* temporary support */
+  -moz-transform: translateX(-50%) translateY(-50%); /* temporary support */
+  -webkit-transform: translateX(-50%) translateY(-50%); /* temporary support */
+  transform: translateX(-50%) translateY(-50%); /* standard support */
+  background: #000 url("../img/video-poster-amy.jpg") no-repeat;
+  background-size: cover;
+  }
+
+}
 
 
 
